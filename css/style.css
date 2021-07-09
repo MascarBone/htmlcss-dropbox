@@ -7,3 +7,73 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/*
+ Utilities
+ */
+
+a {    
+    text-decoration: none;
+}
+button {
+    background-color: rgb(0, 97, 255);
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+}
+
+/* 
+Fine Utilities
+*/
+.centered-100 {
+    width: 100%;
+}
+.centered-80 {
+    width: 80%;
+}
+.centered-60 {
+    width: 60%;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.top-bar {
+    padding: 10px 20px;
+    background-color: rgb(161, 248, 165);
+}
+.top-bar .logo, .list-links, .login{
+    height: 50px;
+    line-height: 50px;
+}
+/* Controllare l'altezza degli elementi e dei contenitori
+per farli allineare con il line-height */
+.top-bar .logo img {
+    vertical-align: middle;
+}
+.top-bar .list-links a {
+    margin: 0 30px;
+    color: black;
+}
+
+
+
+/* .jumbo {
+    background-color: rgb(180, 208, 231);
+} */
+
+/* Freccietta per le liste nei container
+span{
+    color: rgb(0, 97, 255);
+} */
