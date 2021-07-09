@@ -20,6 +20,10 @@ h1 {
     font-weight: 700;
     line-height: 1.5em;
 }
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+}
 p {
     font-size: 1.3em;
 }
@@ -79,6 +83,9 @@ p {
 .mrg-bot45 {
     margin-bottom: 45px;
 }
+.mrg-rgt30 {
+    margin-right: 30px;
+}
 .pdd-rgt45 {
     padding-right: 45px;
 }
@@ -107,16 +114,34 @@ Fine Utilities
     color: black;
 }
 
+
 .jumbo .row .column60 {
     width: 60%;
 }
 .jumbo .row .column60 img {
     width: 100%;
+    max-width: 920px;
 }
 .jumbo .row .icon i {
     font-size: 2em;
 }
 
+.content .content-plan {
+    margin-top: 200px;
+}
+
+.container-plans .column33 {
+    border: 2px solid black;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+}
+.container-plans .column100 {
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
 /* Freccietta per le liste nei container
 span{
     color: rgb(0, 97, 255);
