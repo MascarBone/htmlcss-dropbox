@@ -15,27 +15,25 @@ body {
 a {    
     text-decoration: none;
 }
-button {
-    background-color: rgb(0, 97, 255);
-    border: none;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 1.2em;
-    font-weight: 300;
-    color: white;
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+p {
+    font-size: 1.3em;
 }
 
-/* 
-Fine Utilities
-*/
 .centered-100 {
     width: 100%;
 }
 .centered-80 {
     width: 80%;
+    margin: 0 auto;
 }
 .centered-60 {
-    width: 60%;
+    width: 60%;    
+    margin: 0 auto;
 }
 .fl {
     float: left;
@@ -48,30 +46,73 @@ Fine Utilities
     display: table;
     clear: both;
 }
+.bg-button {
+    background-color: rgb(0, 97, 255);
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+}
+.bg-lightblue{
+    background-color: rgb(180, 208, 231);
+}
+.pos-rel {
+    position: relative;
+}
+.pos-abs {
+    position: absolute;
+}
+.column40 {
+    width: 40%;
+}
+.column60 {
+    width: 60%;
+}
+.mrg-bot15 {
+    margin-bottom: 15px;
+}
+.mrg-bot30 {
+    margin-bottom: 30px;
+}
+.mrg-bot45 {
+    margin-bottom: 45px;
+}
+.pdd-rgt45 {
+    padding-right: 45px;
+}
+.pdd-bot30 {
+    padding-bottom: 30px;
+}
+/* 
+Fine Utilities
+*/
 
 .top-bar {
     padding: 10px 20px;
-    background-color: rgb(161, 248, 165);
 }
-.top-bar .logo, .list-links, .login{
+.top-bar .top-bar-content > *{
     height: 50px;
     line-height: 50px;
 }
-/* Controllare l'altezza degli elementi e dei contenitori
-per farli allineare con il line-height */
-.top-bar .logo img {
+.top-bar .top-bar-content .logo {
+    line-height: 44px;
+}
+.top-bar .top-bar-content .logo img {
     vertical-align: middle;
 }
-.top-bar .list-links a {
+.top-bar .top-bar-content .list-links a {
     margin: 0 30px;
     color: black;
 }
 
-
-
-/* .jumbo {
-    background-color: rgb(180, 208, 231);
-} */
+.jumbo .row .column60 {
+    width: 60%;
+}
+.jumbo .row .column60 img {
+    width: 100%;
+}
 
 /* Freccietta per le liste nei container
 span{
