@@ -113,6 +113,9 @@ Fine Utilities
 .jumbo .row .column60 img {
     width: 100%;
 }
+.jumbo .row .icon i {
+    font-size: 2em;
+}
 
 /* Freccietta per le liste nei container
 span{
