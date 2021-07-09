@@ -39,10 +39,12 @@ ul {
 }
 .centered-80 {
     width: 80%;
+    min-width: 1200px;
     margin: 0 auto;
 }
 .centered-60 {
-    width: 60%;    
+    width: 60%; 
+    min-width: 900px;   
     margin: 0 auto;
 }
 .fl {
@@ -60,8 +62,8 @@ ul {
 .bg-button {
     background-color: rgb(0, 97, 255);
     border: none;
-    height: 40px;
-    padding: 0 20px;
+    /* height: 40px; */
+    padding: 10px 20px;
     font-size: 1.2em;
     font-weight: 300;
     color: white;
@@ -96,6 +98,9 @@ ul {
 }
 .mrg-bot60 {
     margin-bottom: 60px;
+}
+.mrg-top45 {
+    margin-top: 45px;
 }
 .mrg-rgt30 {
     margin-right: 30px;
@@ -146,20 +151,30 @@ Fine Utilities
 .content .text-plan {
     padding: 30px 15px;
 }
-.content .border-grey {
-    border: 1px solid rgb(144, 144, 144);
-}
-.content .container-plans .column33 {
-    width: 33.33%;
-}
-
-.content .container-plans .column100 {
-    width: 100%;
-}
 .content .plan-title {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2em;
+}
+.content .border-grey {
+    border: 1px solid rgb(144, 144, 144);
+}
+.content .container-plans .column33 {
+    width: calc(33.33% - 30px);
+    height: 1200px
+    
+}
+.content .column33 .bg-button {
+    width: 100%;
+}
+.content .container-plans .column33:nth-child(2) {
+    margin: 0 45px;
+}
+.content .container-plans .column100 {
+    width: 100%;
+}
+.content .column100 .bg-button {
+    padding: 10px 60px
 }
 
 /* Freccietta per le liste nei container
