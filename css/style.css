@@ -12,9 +12,6 @@ body {
  Utilities
  */
 
-a {    
-    text-decoration: none;
-}
 h1 {
     font-size: 5em;
     font-weight: 700;
@@ -129,8 +126,9 @@ Fine Utilities
     vertical-align: middle;
 }
 .top-bar .top-bar-content .list-links a {
-    margin: 0 30px;
+    text-decoration: none;
     color: black;
+    margin: 0 30px;
 }
 
 
@@ -164,7 +162,7 @@ Fine Utilities
     height: 1200px
     
 }
-.content .column33 .bg-button {
+.content .container-plans .column33 .bg-button {
     width: 100%;
 }
 .content .container-plans .column33:nth-child(2) {
@@ -173,11 +171,10 @@ Fine Utilities
 .content .container-plans .column100 {
     width: 100%;
 }
-.content .column100 .bg-button {
+.content .container-plans .column100 .bg-button {
     padding: 10px 60px
 }
-
-/* Freccietta per le liste nei container
-span{
+.content .container-plans li i {
     color: rgb(0, 97, 255);
-} */
+}
+
