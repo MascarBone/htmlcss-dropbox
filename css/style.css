@@ -57,13 +57,21 @@ ul {
 }
 /* Effetti colorati sui tag */
 .bg-button {
-    background-color: rgb(0, 97, 255);
     border: none;
     /* height: 40px; */
     padding: 10px 20px;
     font-size: 1.2em;
     font-weight: 300;
+    
+}
+.bg-blue {
+    background-color: rgb(0, 97, 255);
     color: white;
+}
+.bg-white {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 .bg-lightblue{
     background-color: rgb(180, 208, 231);
@@ -99,11 +107,17 @@ ul {
 .mrg-top45 {
     margin-top: 45px;
 }
+.mrg-top200 {
+    padding-top: 200px;
+}
 .mrg-rgt30 {
     margin-right: 30px;
 }
 .pdd-rgt45 {
     padding-right: 45px;
+}
+.pdd-lft45 {
+    padding-left: 45px;
 }
 .pdd-bot30 {
     padding-bottom: 30px;
@@ -143,9 +157,13 @@ Fine Utilities
     font-size: 2em;
 }
 
-.content {
-    margin-top: 200px;
+.column33 {
+    width: calc(33.33% - 30px);
 }
+.column33:nth-child(3n+2) {
+    margin: 0 45px;
+}
+
 .content .text-plan {
     padding: 30px 15px;
 }
@@ -157,24 +175,89 @@ Fine Utilities
 .content .border-grey {
     border: 1px solid rgb(144, 144, 144);
 }
-.content .container-plans .column33 {
-    width: calc(33.33% - 30px);
-    height: 1200px
-    
+.container-plans .column33 {
+    height: 1200px;    
 }
-.content .container-plans .column33 .bg-button {
+.container-plans .column33 .bg-button {
     width: 100%;
 }
-.content .container-plans .column33:nth-child(2) {
+/* .container-plans .column33:nth-child(2) {
     margin: 0 45px;
-}
-.content .container-plans .column100 {
+} */
+.container-plans .column100 {
     width: 100%;
 }
-.content .container-plans .column100 .bg-button {
+.container-plans .column100 .bg-button {
     padding: 10px 60px
 }
-.content .container-plans li i {
+.container-plans li i {
     color: rgb(0, 97, 255);
 }
 
+.container-partner .photo-partner,
+.container-partner .text-partner {
+    display: inline-block;
+}
+.container-partner .photo-partner {
+    width: 59%;    
+    vertical-align: middle;
+}
+.container-partner .photo-partner img {
+    width: 100%;    
+}
+.container-partner .text-partner {
+    width: 40%;    
+    vertical-align: middle;
+}
+
+.container-operations .photo-operations,
+.photo-operations img {
+    width: 100%;
+}
+.operations-footer {
+    width: 50%;
+}
+
+.members .members30 {
+    width: 30%;
+}
+.members .members40 {
+    width: 40%;
+}
+.container-members .member {
+    width: 50%;
+    height: 200px;
+    border: 10px solid transparent;
+}
+.container-members .member svg {
+    width: 100%;
+    padding: 0 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container-members .svg-text {
+    fill: white;
+}
+.container-members .svg-bg-green {
+    background-color: teal;
+    border-color: rgba(194, 194, 194, 0.993);
+}
+.container-members .svg-bg-darkred {
+    background-color: maroon;
+}
+.container-members .svg-bg-softblue {
+    background-color: rgb(90, 142, 190);
+}
+.container-members .svg-bg-red {
+    background-color: red;
+}
+.container-members .svg-bg-dirtwhite {
+    background-color: maroon;
+}
+.container-members .svg-bg-blue {
+    background-color: blue;
+}
+.container-members .svg-bg-yellow {
+    background-color: yellow;
+}
