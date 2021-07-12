@@ -280,3 +280,8 @@ Fine Utilities
 .members-trial {
     padding: 100px 0;
 }
+
+.asked-questions li > * {
+    line-height: 80px;
+    height: 80px;
+}
