@@ -24,6 +24,9 @@ h2 {
 h3 {
     font-size: 2em;
 }
+h4 {
+    font-size: 1.5em;
+}
 p {
     font-size: 1.3em;
 }
@@ -73,6 +76,10 @@ ul {
     background-color: white;
     border: 1px solid black;
     color: black;
+}
+.bg-black {
+    background-color: black;
+    color: white;
 }
 .bg-lightblue{
     background-color: rgb(180, 208, 231);
@@ -284,4 +291,30 @@ Fine Utilities
 .asked-questions li > * {
     line-height: 80px;
     height: 80px;
+}
+
+.container-footer {
+    padding: 100px 0;
+}
+.container-footer ul {
+    width: 20%;
+}
+.container-footer li {
+    line-height: 30px;
+}
+.container-footer h4,a {
+    color: white;
+}
+.container-footer a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.language {
+    color: grey;
+    width: 10%;
+}
+
+.language i:last-child {
+    vertical-align: bottom;
 }
