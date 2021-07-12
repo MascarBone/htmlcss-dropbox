@@ -33,6 +33,7 @@ ul {
 
 .centered-100 {
     width: 100%;
+    min-width: 1500px;
 }
 .centered-80 {
     width: 80%;
@@ -76,8 +77,14 @@ ul {
 .bg-lightblue{
     background-color: rgb(180, 208, 231);
 }
-.underline-grey {
-    border-bottom: 1px solid rgb(144, 144, 144);
+.underline {
+    border-bottom: 1px solid;
+}
+.upperline {
+    border-top: 1px solid;
+}
+.borderline-grey {
+    border-color: rgb(144, 144, 144);
 }
 
 .pos-rel {
@@ -121,6 +128,9 @@ ul {
 }
 .pdd-bot30 {
     padding-bottom: 30px;
+}
+.pdd-top30 {
+    padding-top: 30px;
 }
 /* 
 Fine Utilities
@@ -223,41 +233,50 @@ Fine Utilities
 }
 .members .members40 {
     width: 40%;
+    height: 500px;
 }
 .container-members .member {
     width: 50%;
-    height: 200px;
-    border: 10px solid transparent;
+    height: 250px;
+    border: 10px splid transparent;
 }
-.container-members .member svg {
-    width: 100%;
-    padding: 0 30px;
+.container-members img {
+    width: 120px;
+}
+.container-members .member img {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
+    filter: invert(1);
 }
-.container-members .svg-text {
-    fill: white;
+.container-members .bg-green {
+    background-color: rgb(162, 211, 155);
+    border-color: rgba(255, 255, 255, 0.5);
 }
-.container-members .svg-bg-green {
-    background-color: teal;
-    border-color: rgba(194, 194, 194, 0.993);
+.container-members .bg-darkred {
+    background-color: rgb(97, 8, 43);
 }
-.container-members .svg-bg-darkred {
-    background-color: maroon;
+.container-members .bg-softblue {
+    background-color: rgb(0, 147, 206);
 }
-.container-members .svg-bg-softblue {
-    background-color: rgb(90, 142, 190);
-}
-.container-members .svg-bg-red {
+.container-members .bg-red {
     background-color: red;
 }
-.container-members .svg-bg-dirtwhite {
-    background-color: maroon;
+.container-members .bg-dirtwhite {
+    background-color: rgb(245, 245, 245);
 }
-.container-members .svg-bg-blue {
+.container-members .bg-blue {
     background-color: blue;
 }
-.container-members .svg-bg-yellow {
-    background-color: yellow;
+.container-members .bg-yellow {
+    background-color: rgb(255, 216, 48);
+}
+.container-members .members40 {
+    padding: 40px;
+}
+.members-trial h2 {
+    width: 50%;
+}
+.members-trial {
+    padding: 100px 0;
 }
