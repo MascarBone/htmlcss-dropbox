@@ -36,16 +36,13 @@ ul {
 
 .centered-100 {
     width: 100%;
-    min-width: 1500px;
 }
 .centered-80 {
     width: 80%;
-    min-width: 1200px;
     margin: 0 auto;
 }
 .centered-60 {
     width: 60%; 
-    min-width: 900px;   
     margin: 0 auto;
 }
 .fl {
@@ -84,6 +81,9 @@ ul {
 .bg-lightblue{
     background-color: rgb(180, 208, 231);
 }
+.border {
+    border: 1px solid;
+}
 .underline {
     border-bottom: 1px solid;
 }
@@ -91,7 +91,7 @@ ul {
     border-top: 1px solid;
 }
 .borderline-grey {
-    border-color: rgb(144, 144, 144);
+    border-color: rgb(215, 215, 215);
 }
 
 .pos-rel {
@@ -99,12 +99,6 @@ ul {
 }
 .pos-abs {
     position: absolute;
-}
-.column40 {
-    width: 40%;
-}
-.column60 {
-    width: 60%;
 }
 .mrg-bot15 {
     margin-bottom: 15px;
@@ -163,12 +157,16 @@ Fine Utilities
 }
 
 
-.jumbo .row .column60 {
-    width: 60%;
+.jumbo .row .column35 {
+    width: 35%;
 }
-.jumbo .row .column60 img {
-    width: 100%;
-    max-width: 920px;
+.jumbo .row .column65 {
+    width: 65%;    
+    right: 0;
+}
+.jumbo .row .column65 img {
+    max-width: 100%;
+    width: 920px;
 }
 .jumbo .row .icon i {
     font-size: 2em;
@@ -176,6 +174,7 @@ Fine Utilities
 
 .column33 {
     width: calc(33.33% - 30px);
+    min-width: 300px;
 }
 .column33:nth-child(3n+2) {
     margin: 0 45px;
@@ -188,9 +187,6 @@ Fine Utilities
     text-align: center;
     padding: 10px 0;
     font-size: 1.2em;
-}
-.content .border-grey {
-    border: 1px solid rgb(144, 144, 144);
 }
 .container-plans .column33 {
     height: 1200px;    
@@ -216,7 +212,7 @@ Fine Utilities
     display: inline-block;
 }
 .container-partner .photo-partner {
-    width: 59%;    
+    max-width: 59%;    
     vertical-align: middle;
 }
 .container-partner .photo-partner img {
@@ -236,16 +232,18 @@ Fine Utilities
 }
 
 .members .members30 {
-    width: 30%;
+    max-width: 30%;
 }
 .members .members40 {
     width: 40%;
-    height: 500px;
+    min-width: 300px;
+    min-height: 500px;
 }
 .container-members .member {
     width: 50%;
-    height: 250px;
-    border: 10px splid transparent;
+    min-width: 250px;
+    min-height: 250px;
+    border: 10px solid transparent;
 }
 .container-members img {
     width: 120px;
@@ -254,7 +252,7 @@ Fine Utilities
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);    
-    filter: invert(1);
+    filter: invert(1);    
 }
 .container-members .bg-green {
     background-color: rgb(162, 211, 155);
@@ -290,14 +288,18 @@ Fine Utilities
 
 .asked-questions li > * {
     line-height: 80px;
+    /* 
+    Non impostare l'altezza, così non si sovrappongono se viene ridotta la pagina
     height: 80px;
+     */
 }
 
 .container-footer {
     padding: 100px 0;
 }
-.container-footer ul {
+.container-footer .list {
     width: 20%;
+    min-width: 250px;
 }
 .container-footer li {
     line-height: 30px;
@@ -312,7 +314,7 @@ Fine Utilities
 
 .language {
     color: grey;
-    width: 10%;
+    width: 200px;
 }
 
 .language i:last-child {
