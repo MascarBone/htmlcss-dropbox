@@ -63,8 +63,15 @@ ul {
     padding: 10px 20px;
     font-size: 1.2em;
     font-weight: 300;
-    
+    cursor: pointer;
+    transition: all 0.1s linear 0s;
 }
+
+.bg-button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
 .bg-blue {
     background-color: rgb(0, 97, 255);
     color: white;
@@ -190,6 +197,7 @@ Fine Utilities
 }
 .container-plans .column33 {
     height: 1200px;    
+    
 }
 .container-plans .column33 .bg-button {
     width: 100%;
@@ -253,6 +261,12 @@ Fine Utilities
     left: 50%;
     transform: translate(-50%,-50%);    
     filter: invert(1);    
+    /* transition per cambiare colore al logo */
+    transition: all 0.5s ease-out 0s;
+}
+/* Hover per attivare il cambio sul logo */
+.container-members .member:hover img {
+    filter: invert(0);
 }
 .container-members .bg-green {
     background-color: rgb(162, 211, 155);
