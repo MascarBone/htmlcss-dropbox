@@ -56,6 +56,11 @@ ul {
     display: table;
     clear: both;
 }
+/* Classe per il menù a tendina */
+.menu {
+    display: none;
+    position: absolute;
+}
 /* Effetti colorati sui tag */
 .bg-button {
     border: none;
@@ -78,7 +83,6 @@ ul {
 }
 .bg-white {
     background-color: white;
-    border: 1px solid black;
     color: black;
 }
 .bg-black {
@@ -99,6 +103,9 @@ ul {
 }
 .borderline-grey {
     border-color: rgb(215, 215, 215);
+}
+.borderline-black {
+    border-color: black;
 }
 
 .pos-rel {
@@ -148,7 +155,7 @@ Fine Utilities
     padding: 10px 20px;
 }
 .top-bar .top-bar-content > *{
-    height: 50px;
+    /* height: 50px; */
     line-height: 50px;
 }
 .top-bar .top-bar-content .logo {
@@ -161,6 +168,17 @@ Fine Utilities
     text-decoration: none;
     color: black;
     margin: 0 30px;
+}
+.top-bar .top-bar-content .list-links a:hover {
+    text-decoration: underline;
+}
+/* Menù a tendine sotto il pulsante Supporto */
+.top-bar .assistance {
+    display: inline-block;
+}
+.top-bar .assistance:hover .menu{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -374,7 +392,8 @@ Fine Utilities
 .container-footer li {
     line-height: 30px;
 }
-.container-footer h4,a {
+.container-footer h4,
+.container-footer a {
     color: white;
 }
 .container-footer a {
