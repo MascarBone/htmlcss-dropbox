@@ -381,13 +381,53 @@ Fine Utilities
     padding: 100px 0;
 }
 
-.asked-questions li > * {
+/* Sezione per le domande frequenti FAQ */
+.asked-questions .container-questions {
+    margin: 20px 0;
+}
+/* Generiche impostazioni dei tag */
+.asked-questions p {
+    width: 90%;    
+}
+.asked-questions i {
+    width: 10%;
+    font-size: 20px;
+    text-align: right;
+}
+/* Soluzione con i display:inline-block  */
+.asked-questions .question1 > * {
+    display: inline-block;
+}
+.asked-questions .question1 p {
+    vertical-align: middle;
+}
+/* Soluzione con il float */
+.asked-questions .question2 i {
+    padding-top: 3px;
+}
+
+/* Info a comparsa con l'hover */
+.asked-questions .container-questions .info {
+    display: none;
+}
+.asked-questions li:hover .container-questions .info { 
+    display: block;
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 0.9em;
+    color: rgb(99, 99, 99);
+}
+
+
+/* 
+    Soluzione che portava all'errore della sovrapposizione di tutte le linee di testo e con troppo spazio nella riduzione della pagina.
+    .asked-questions li > * {
     line-height: 80px;
-    /* 
+    
     Non impostare l'altezza, così non si sovrappongono se viene ridotta la pagina
     height: 80px;
-     */
-}
+    
+} */
 
 .container-footer {
     padding: 100px 0;
