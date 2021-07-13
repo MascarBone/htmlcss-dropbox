@@ -178,19 +178,29 @@ Fine Utilities
 .jumbo .row .icon i {
     font-size: 2em;
 }
+.content-title input,label {
+    transition: all 0.2s linear 0s;
+}
+/* Animazione radiobutton */
+/* .content-title >div:hover input{
+    height: 50px;
+    width: 50px;
+}
+.content-title >div:hover label{
+    font-size: 50px;
+} */
 
-.column33 {
+.container-plans .column33 {
     width: calc(33.33% - 30px);
     min-width: 300px;
 }
-.column33:nth-child(3n+2) {
+.container-plans .column33:nth-child(3n+2) {
     margin: 0 45px;
 }
-
-.content .text-plan {
+.container-plans .text-plan {
     padding: 30px 15px;
 }
-.content .plan-title {
+.container-plans .plan-title {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2em;
@@ -225,6 +235,18 @@ Fine Utilities
 }
 .container-partner .photo-partner img {
     width: 100%;    
+    /* animazione per il filtro greyscale */
+    animation-name: grey-filter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes grey-filter {
+    0% {
+        filter: none;
+    }
+    50% {
+        filter: grayscale(50%);
+    }
 }
 .container-partner .text-partner {
     width: 40%;    
@@ -234,6 +256,17 @@ Fine Utilities
 .container-operations .photo-operations,
 .photo-operations img {
     width: 100%;
+    animation-name: bigger;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.24,.91,0,.81);
+    c
+}
+@keyframes bigger {
+    50% {
+        transform: scale(1.05);
+    }
+    
 }
 .operations-footer {
     width: 50%;
@@ -270,25 +303,48 @@ Fine Utilities
 }
 .container-members .bg-green {
     background-color: rgb(162, 211, 155);
-    border-color: rgba(255, 255, 255, 0.5);
+    /* border-color: rgba(255, 255, 255, 0.5); */
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .container-members .bg-darkred {
     background-color: rgb(97, 8, 43);
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .container-members .bg-softblue {
     background-color: rgb(0, 147, 206);
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .container-members .bg-red {
     background-color: red;
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .container-members .bg-dirtwhite {
     background-color: rgb(245, 245, 245);
 }
 .container-members .bg-blue {
     background-color: blue;
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .container-members .bg-yellow {
     background-color: rgb(255, 216, 48);
+    animation-name: logos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* Animazione per i bordi dei loghi */
+@keyframes logos {
+    50% {border-color: rgba(183, 183, 183, 0.4);}
 }
 .container-members .members40 {
     padding: 40px;
