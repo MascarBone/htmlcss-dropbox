@@ -158,44 +158,46 @@ Fine Utilities
     /* height: 50px; */
     line-height: 50px;
 }
-.top-bar .top-bar-content .logo {
+.top-bar-content .logo {
     line-height: 44px;
 }
-.top-bar .top-bar-content .logo img {
+.top-bar-content .logo img {
     vertical-align: middle;
 }
-.top-bar .top-bar-content .list-links a {
+.top-bar-content .list-links a {
     text-decoration: none;
     color: black;
     margin: 0 30px;
 }
-.top-bar .top-bar-content .list-links a:hover {
+.top-bar-content .list-links a:hover {
     text-decoration: underline;
 }
 /* Menù a tendine sotto il pulsante Supporto */
-.top-bar .assistance {
+.top-bar-content .assistance {
     display: inline-block;
 }
-.top-bar .assistance:hover .menu{
+.top-bar-content .assistance:hover .menu{
     display: block;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
 
-.jumbo .row .column35 {
+.jumbo .column35 {
     width: 35%;
 }
-.jumbo .row .column65 {
+.jumbo .column65 {
     width: 65%;    
     right: 0;
 }
-.jumbo .row .column65 img {
+.jumbo .column65 img {
     max-width: 100%;
     width: 920px;
 }
-.jumbo .row .icon i {
+.jumbo .icon i {
     font-size: 2em;
 }
+
+
 .content-title input,label {
     transition: all 0.2s linear 0s;
 }
@@ -285,7 +287,6 @@ Fine Utilities
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(.24,.91,0,.81);
-    c
 }
 @keyframes bigger {
     50% {
